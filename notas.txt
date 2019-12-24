@@ -1,0 +1,18 @@
+Pasos:
+
+1. Definir estructura del proyecto
+    - public
+        * Index.html
+    - src
+        - components
+        * index.js
+2. Instalar react en proyecto
+    npm i react react-dom
+
+Crear componente 
+configurar entrada en index.js
+
+3. Configurar Babel
+    npm i @babel/core babel-loader @babel/preset-env @babel/preset-react --save-dev
+    crear en archivo de configuracion de babel .babelrc
+
