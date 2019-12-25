@@ -23,3 +23,20 @@ configurar entrada en index.js
 crear script de compilacion en package.json
 
 "build": "webpack --mode production"
+
+instalar npm i webpack-dev-server --save-dev
+
+configurar en package.json el dev-servers
+
+trabajar con sass estraee css del bundle resultante 
+npm i mini-css-extract-plugin css-loader node-sass sass-loader --save-dev
+
+se añade la regla en webpack
+
+instalar ESLint 
+npm i eslint babel-eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-react eslint-plugin-jsx-a11y
+
+añadir configuracion
+crear .eslintrc y pegar lo de la url https://gist.github.com/gndx/60ae8b1807263e3a55f790ed17c4c57a
+
+
