@@ -16,3 +16,10 @@ configurar entrada en index.js
     npm i @babel/core babel-loader @babel/preset-env @babel/preset-react --save-dev
     crear en archivo de configuracion de babel .babelrc
 
+4. Instalar y configurar webpack (agrupa archivos para produccion o dev)
+    npm i webpack webpack-cli html-webpack-plugin html-loader --save-dev
+    crear archivo de configuracion de webpack
+
+crear script de compilacion en package.json
+
+"build": "webpack --mode production"
