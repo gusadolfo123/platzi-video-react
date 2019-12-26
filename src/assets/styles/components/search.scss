@@ -1,0 +1,28 @@
+$color: red;
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px 30px;
+  // min-height: calc(100vh - 200px);
+}
+.search__title {
+  color: whitesmoke;
+  font-size: 25px;
+}
+.input {
+  background-color: rgba(255, 255, 225, 0.1);
+  border: 2px solid white;
+  border-radius: 25px;
+  color: whitesmoke;
+  font-family: "Muli", sans-serif;
+  font-size: 16px;
+  height: 50px;
+  padding: 0px 20px;
+  width: 70%;
+}
+::placeholder {
+  color: whitesmoke;
+}

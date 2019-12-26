@@ -1,0 +1,22 @@
+.carrousel {
+  overflow: scroll;
+  width: 100%;
+  padding: 30px;
+  position: relative;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.carrousel__container {
+  white-space: nowrap;
+  margin: 40px 0px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.carrousel__container:hover .carrousel-item {
+  opacity: 0.3;
+}
+.carrousel__container:hover .carrousel-item:hover {
+  transform: scale(1.5);
+  opacity: 1;
+}
