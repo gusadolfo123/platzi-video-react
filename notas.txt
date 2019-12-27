@@ -46,3 +46,8 @@ agregar imagenes a webpack
 npm i file-loader --save-dev
 
 configurar archivo webpack para las imagenes
+
+para simular una api con un archivo .json se usa json-server
+npm i json-server -g 
+
+iniciar servidor json-server initialState.json
