@@ -3,20 +3,16 @@ import "../assets/styles/components/carrouselItem.scss";
 import playButton from "../assets/static/play.png";
 import plusButton from "../assets/static/plus.png";
 
-const CarrouselItem = () => (
+const CarrouselItem = ({ cover, title, year, contentRating, duration }) => (
   <div className="carrousel-item">
-    <img
-      className="carrousel-item__img"
-      src="https://images.pexels.com/photos/2832078/pexels-photo-2832078.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
-      alt="people"
-    />
+    <img className="carrousel-item__img" src={cover} alt={title} />
     <div className="carrousel-item__details">
       <div>
         <img src={playButton} alt="Play" />
         <img src={plusButton} alt="Plus" />
       </div>
-      <p className="carrousel-item__details--title">Titulo descriptivo</p>
-      <p className="carrousel-item__details--subtitle">2019 16+ 114 minutos</p>
+      <p className="carrousel-item__details--title">{title}</p>
+      <p className="carrousel-item__details--subtitle">{`${year} ${contentRating} ${duration}`}</p>
     </div>
   </div>
 );
