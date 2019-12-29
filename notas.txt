@@ -51,3 +51,7 @@ para simular una api con un archivo .json se usa json-server
 npm i json-server -g 
 
 iniciar servidor json-server initialState.json
+
+
+para añadir propTypes al proyecto
+npm i prop-types

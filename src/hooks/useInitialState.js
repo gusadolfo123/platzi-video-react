@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const useInitialState = () => {
+const useInitialState = API => {
   // se asigna el estado y su valor inicial
   const [videos, setVideos] = useState({
     mylist: [],
@@ -9,10 +9,11 @@ const useInitialState = () => {
   });
 
   useEffect(() => {
-    fetch("http://localhost:3000/initalState")
+    fetch(API)
       .then(response => response.json())
       .then(data => setVideos(data));
   }, []);
+
   return videos;
 };
 

@@ -259,6 +259,7 @@
     "wrap-regex": 0,
     "yoda": [2, "never"],
     "arrow-parens": "off",
-    "react/jsx-props-no-spreading": "off"
+    "react/jsx-props-no-spreading": "off",
+    "comma-dangle": ["error", "never"]
   }
 }
