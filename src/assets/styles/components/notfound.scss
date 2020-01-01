@@ -1,0 +1,30 @@
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px 30px;
+  min-height: calc(100vh - 180px);
+}
+.error__container {
+  width: 400px;
+  height: 400px;
+  text-align: center;
+}
+.error_container__title {
+  color: whitesmoke;
+  letter-spacing: 2px;
+}
+.error__container img {
+  width: 300px;
+}
+.error_container__detail {
+  color: whitesmoke;
+}
+.error_container__detail a {
+  text-decoration: none;
+  font-weight: bold;
+}
+.error_container__detail a:hover {
+  text-decoration: underline;
+}

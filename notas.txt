@@ -55,3 +55,11 @@ iniciar servidor json-server initialState.json
 
 para añadir propTypes al proyecto
 npm i prop-types
+
+-- Curso de React Router y Redux
+
+instalar react router
+npm i react-router-dom --save
+
+añadir configuracion en webpack para que reconosca las rutas del react-router
+

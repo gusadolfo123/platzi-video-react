@@ -4,11 +4,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: $theme-font;
-  background: $main-color;
 }
 * {
   box-sizing: border-box;
 }
-.app {
+.App {
   background: linear-gradient(#21c08b, #ab88ff);
 }
