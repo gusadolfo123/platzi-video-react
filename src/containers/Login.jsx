@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import GoogleIcon from "../assets/static/google-icon.png";
 import TwitterIcon from "../assets/static/twitter-icon.png";
 import "../assets/styles/components/login.scss";
@@ -24,7 +25,7 @@ const Login = () => {
               <input type="checkbox" id="box1" value="Checkbox" />
               Recuerdame
             </label>
-            <a href="/recovery">Olvide Contraseña</a>
+            <Link to="/recovery">Olvide Contraseña</Link>
           </div>
         </form>
         <section className="login__container--social-media">
@@ -39,7 +40,7 @@ const Login = () => {
         </section>
         <p className="login_container--register">
           No tienes ninguna cuenta?
-          <a href="/register">Registrate</a>
+          <Link to="/register">Registrate</Link>
         </p>
       </section>
     </section>
