@@ -1,22 +1,57 @@
-import React from "react";
+import React, { useState } from "react";
 import "../assets/styles/components/register.scss";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+import { RegisterRequest } from "../actions/index";
 
-const Register = () => {
+const Register = props => {
+  const [form, setValues] = useState({
+    email: "",
+    password: "",
+    name: ""
+  });
+
+  const handleInput = e => {
+    setValues({
+      ...form,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleRegister = e => {
+    e.preventDefault();
+    props.RegisterRequest(form);
+    props.history.push("/");
+  };
+
   return (
     <section className="register">
       <section className="register__container">
         <h2>Registrarse</h2>
-        <form className="register__container--form">
-          <input type="text" className="input" placeholder="Nombre" />
-          <input type="email" className="input" placeholder="Correo" />
+        <form className="register__container--form" onSubmit={handleRegister}>
           <input
+            name="name"
+            type="text"
+            className="input"
+            placeholder="Nombre"
+            onChange={handleInput}
+          />
+          <input
+            name="email"
+            type="email"
+            className="input"
+            placeholder="Correo"
+            onChange={handleInput}
+          />
+          <input
+            name="password"
             type="password"
             autoComplete="false"
             className="input"
             placeholder="Contraseña"
+            onChange={handleInput}
           />
-          <button type="button" className="button">
+          <button type="submit" className="button">
             Registrarse
           </button>
         </form>
@@ -28,4 +63,9 @@ const Register = () => {
   );
 };
 
-export default Register;
+const mapDistpatchToProps = {
+  RegisterRequest
+};
+
+// export default Register;
+export default connect(null, mapDistpatchToProps)(Register);

@@ -63,3 +63,11 @@ npm i react-router-dom --save
 
 añadir configuracion en webpack para que reconosca las rutas del react-router
 
+implementando Redux
+npm i redux react-redux --save
+
+implementando gravatar
+npm i md5 --save
+
+instalando redux devtools
+npm install redux-devtools-extension --save
